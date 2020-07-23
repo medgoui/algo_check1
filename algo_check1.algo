@@ -19,6 +19,7 @@ BEGIN
         END_SWITCH
         counter_of_string := counter_of_string + 1;
     END_WHILE
+    counter_of_string := counter_of_string + 1;
     Write("Length of sentence is "+counter_of_string);
     Write("Number of vowels is "+counter_vowels);
     Write("Number of words is "+counter_words);
