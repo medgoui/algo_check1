@@ -1,0 +1,22 @@
+ALGORITHM check_string
+VAR
+    sentence : STRING;
+    counter_of_string : INTEGER := 0;
+    counter_length : INTEGER := 0;
+    counter_words : INTEGER := 0;
+    counter_vowels : INTEGER := 0;
+BEGIN
+    Read(sentence);
+    WHILE (sentence[counter_of_string]<>'.') DO
+        counter_of_string := counter_of_string + 1;
+        SWITCH (sentence[counter_of_string]) DO
+            case ' '  : counter_words := counter_words + 1; break;
+            case 'a' : counter_vowels := counter_vowels + 1; break;
+            case 'e' : counter_vowels := counter_vowels + 1; break;
+            case 'i' : counter_vowels := counter_vowels + 1; break;
+            case 'o' : counter_vowels := counter_vowels + 1; break;
+            case 'u' : counter_vowels := counter_vowels + 1; break;
+            default : break;
+        END_SWITCH
+    END_WHILE
+END
