@@ -19,4 +19,7 @@ BEGIN
             default : break;
         END_SWITCH
     END_WHILE
+    Write("Length of sentence is "+counter_of_string);
+    Write("Number of vowels is "+counter_vowels);
+    Write("Number of words is "+counter_words);
 END
