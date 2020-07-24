@@ -1,11 +1,12 @@
 ALGORITHM check_string
 VAR
     sentence : STRING;
-    counter_of_string : INTEGER := 1;
+    counter_of_string : INTEGER := 0;
     counter_length : INTEGER := 0;
     counter_words : INTEGER := 0;
     counter_vowels : INTEGER := 0;
 BEGIN
+    Write("Give your sentence");
     Read(sentence);
     WHILE (sentence[counter_of_string]<>'.') DO
         SWITCH (sentence[counter_of_string]) DO
@@ -19,8 +20,9 @@ BEGIN
         END_SWITCH
         counter_of_string := counter_of_string + 1;
     END_WHILE
-    counter_of_string := counter_of_string + 1;
-    Write("Length of sentence is "+counter_of_string);
-    Write("Number of vowels is "+counter_vowels);
-    Write("Number of words is "+counter_words);
+    counter_words := counter_words + 1;
+    counter_of_length := counter_of_string + 1;
+    Write("Length of sentence is ",counter_of_string);
+    Write("Number of vowels is ",counter_vowels);
+    Write("Number of words is ",counter_words);
 END
